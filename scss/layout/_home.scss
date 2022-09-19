@@ -13,13 +13,13 @@
 
             h1{
                 font-size: 4rem;
-                font-size: clamp(2rem, -0.5rem + 8vw, 4rem);
+                font-size: clamp(2.5rem, 0.625rem + 6vw, 4rem);
                 margin-bottom: 1rem;
                 line-height: 1;
                 span{
                     font-family: 'Dancing script';
                     font-size: 5rem;
-                    font-size: clamp(2.5rem, -0.625rem + 10vw, 5rem);
+                    font-size: clamp(3rem, 0.5rem + 8vw, 5rem);
                     color: rgb(255, 118, 141);
                 }
             }
@@ -28,15 +28,13 @@
                 line-height: 2;
                 margin-bottom: 2rem;
                 color: #808080;
-                font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
             }
 
             .cta{
-                font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
                 border: 1px solid #121212;
                 background: #121212;
                 color: #fff;
-                padding: 10px clamp(0.9375rem, 0.1563rem + 2.5vw, 1.5625rem);
+                padding: 10px 25px;
                 font-weight: 500;
                 svg{
                     color: #fff;
@@ -48,25 +46,25 @@
             width: min(100%, 700px);
             display: flex;
             align-items: center;
+            z-index: -1;
 
             img{
                 width: 100%;
                 max-width: 200px;
                 position: relative;
-                z-index: -1;
             }
 
-            &__one{
+            .one{
                 translate: 100%;
                 animation: rotateleft 1s ease 1s, fadeIn 1s ease;
                 animation-fill-mode: forwards;
             }
 
-            &__two{
+            .two{
                 animation: fadeIn 1s ease;
             }
 
-            &__three{
+            .three{
                 translate: -100%;
                 animation: rotateright 1s ease 1s, fadeIn 1s ease;
                 animation-fill-mode: forwards;
