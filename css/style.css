@@ -449,7 +449,7 @@ header .nav__links .cta {
   position: relative;
 }
 .home__wrapper__image .one {
-  translate: 100%;
+  left: 100%;
   -webkit-animation: rotateleft 1s ease 1s, fadeIn 1s ease;
           animation: rotateleft 1s ease 1s, fadeIn 1s ease;
   -webkit-animation-fill-mode: forwards;
@@ -460,7 +460,7 @@ header .nav__links .cta {
           animation: fadeIn 1s ease;
 }
 .home__wrapper__image .three {
-  translate: -100%;
+  left: -100%;
   -webkit-animation: rotateright 1s ease 1s, fadeIn 1s ease;
           animation: rotateright 1s ease 1s, fadeIn 1s ease;
   -webkit-animation-fill-mode: forwards;
@@ -468,26 +468,26 @@ header .nav__links .cta {
 }
 @-webkit-keyframes rotateleft {
   to {
-    rotate: -20deg;
-    translate: 50%;
+    transform: rotate(-20deg);
+    left: 50%;
   }
 }
 @keyframes rotateleft {
   to {
-    rotate: -20deg;
-    translate: 50%;
+    transform: rotate(-20deg);
+    left: 50%;
   }
 }
 @-webkit-keyframes rotateright {
   to {
-    rotate: 20deg;
-    translate: -50%;
+    transform: rotate(20deg);
+    left: -50%;
   }
 }
 @keyframes rotateright {
   to {
-    rotate: 20deg;
-    translate: -50%;
+    transform: rotate(20deg);
+    left: -50%;
   }
 }
 @-webkit-keyframes fadeIn {

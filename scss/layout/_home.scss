@@ -55,7 +55,7 @@
             }
 
             .one{
-                translate: 100%;
+                left: 100%;
                 animation: rotateleft 1s ease 1s, fadeIn 1s ease;
                 animation-fill-mode: forwards;
             }
@@ -65,22 +65,22 @@
             }
 
             .three{
-                translate: -100%;
+                left: -100%;
                 animation: rotateright 1s ease 1s, fadeIn 1s ease;
                 animation-fill-mode: forwards;
             }
 
             @keyframes rotateleft {
                 to{
-                    rotate: -20deg;
-                    translate: 50%;
+                    transform: rotate(-20deg);
+                    left: 50%;
                 }
             }
 
             @keyframes rotateright {
                 to{
-                    rotate: 20deg;
-                    translate: -50%;
+                    transform: rotate(20deg);
+                    left: -50%;
                 }
             }
 
