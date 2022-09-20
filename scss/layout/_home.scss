@@ -1,15 +1,17 @@
 .home{
-
+    background: linear-gradient(90deg, #fff 50%, #f2f3f4 50% );
+    border: 2px solid red;
+    
     &__wrapper{
-        padding: 20px 10px;
         width: min(100%, 1200px);
+        padding: 60px 10px;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         &__content{
-            width: min(100%, 650px);
+            width: min(100%, 625px);
 
             h1{
                 font-size: 4rem;
@@ -46,12 +48,12 @@
             width: min(100%, 700px);
             display: flex;
             align-items: center;
-            z-index: -1;
 
             img{
                 width: 100%;
                 max-width: 200px;
                 position: relative;
+                z-index: 0;
             }
 
             .one{
@@ -101,7 +103,9 @@
         }
     }
 
-    
+    @media screen and (max-width:720px) {
+        background: linear-gradient(180deg, #fff 50%, #f2f3f4 50% );
+    }
 }
 
 

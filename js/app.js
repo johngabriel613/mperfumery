@@ -9,10 +9,3 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
     navLink.classList.remove('active')
 })
-
-const hero = document.querySelector('#hero')
-
-window.addEventListener('load', () => {
-    hero.src = ""
-    hero.src = "images/hero.gif"
-})
