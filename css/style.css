@@ -48,6 +48,7 @@ header .nav__menu, header .nav__shop {
   align-items: center;
 }
 header .nav__logo span {
+  font-family: "Rufina", sans-serif;
   font-size: 1.75rem;
   white-space: nowrap;
 }
@@ -135,7 +136,7 @@ header .nav__links__cta {
   font-family: "Dancing script", cursive;
   font-size: 5rem;
   font-size: clamp(3rem, 0.5rem + 8vw, 5rem);
-  color: #FF4747;
+  color: #ff8667;
 }
 .home__wrapper__content p {
   line-height: 2;
@@ -164,7 +165,7 @@ header .nav__links__cta {
   width: min(100%, 350px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #FF4747;
+  background-color: #ff8667;
   transform: translate(-50%);
   left: 50%;
 }
