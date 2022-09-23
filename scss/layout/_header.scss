@@ -2,24 +2,30 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+
+    &.sticky{
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: .3s ease-in-out;
+    }
     
 
     .nav{
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
         width: min(100%, 1200px);
         margin: auto;
-        padding: 20px 10px;
+        padding: 15px 10px;
 
         &__menu, &__shop{
             display: none;
             font-size: 1.5rem;
+            align-items: center;
         }
     
         &__logo span{
-            font-size: 1.5rem;
-            font-weight: bold;
+            font-size: 1.75rem;
             white-space: nowrap;
         }
     
@@ -43,7 +49,6 @@ header{
     
             a{
                 color: #121212;
-                font-weight: 500;
             }
 
             &__cta{
@@ -60,7 +65,7 @@ header{
             &__links{
                 position: absolute;
                 flex-direction: column;
-                justify-content: stretch;
+                justify-content: flex-start;
                 align-items: stretch;
                 gap: 2.5rem;
                 background: #fafafa;
@@ -95,7 +100,7 @@ header{
             }
 
             &__menu, &__shop{
-                display: block;
+                display: flex;
             }
             
         }

@@ -9,3 +9,19 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
     navLink.classList.remove('active')
 })
+
+
+window.addEventListener('scroll', scrollNav)
+
+function scrollNav(){
+
+    const header = document.querySelector('header')
+
+    if(scrollY > 20){
+        header.classList.add('sticky')
+    }else{
+        header.classList.remove('sticky')
+    }
+}
+
+

@@ -6,20 +6,21 @@
 
 body {
   font-size: 100%;
+  background: #FFF5EE;
 }
 
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: "Rufina", serif;
+h1, h2, h3, h4, h5, h6 {
+  font: 100% "Rufina", sans-serif;
   font-weight: normal;
-  font-size: 100%;
 }
 
 p, a {
-  font: 100% "Open sans", sans-serif;
+  font: 100% "Poppins", sans-serif;
+  font-weight: normal;
 }
 
 header {
@@ -30,14 +31,15 @@ header {
 header.sticky {
   background: #fff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s ease-in-out;
 }
 header .nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   width: min(100%, 1200px);
   margin: auto;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
 header .nav__menu, header .nav__shop {
   display: none;
@@ -45,8 +47,7 @@ header .nav__menu, header .nav__shop {
   align-items: center;
 }
 header .nav__logo span {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.75rem;
   white-space: nowrap;
 }
 header .nav__links {
@@ -66,7 +67,6 @@ header .nav__links ul {
 }
 header .nav__links a {
   color: #121212;
-  font-weight: 500;
 }
 header .nav__links__cta {
   border: 2px solid;
@@ -132,10 +132,10 @@ header .nav__links__cta {
   line-height: 1;
 }
 .home__wrapper__content h1 span {
-  font-family: "Dancing script";
+  font-family: "Dancing script", cursive;
   font-size: 5rem;
   font-size: clamp(3rem, 0.5rem + 8vw, 5rem);
-  color: rgb(255, 118, 141);
+  color: #FF4747;
 }
 .home__wrapper__content p {
   line-height: 2;
@@ -147,7 +147,6 @@ header .nav__links__cta {
   background: #121212;
   color: #fff;
   padding: 10px 25px;
-  font-weight: 500;
 }
 .home__wrapper__content .cta svg {
   color: #fff;
@@ -225,5 +224,43 @@ header .nav__links__cta {
   .home__wrapper {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+.services__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(100%, 1200px);
+  margin: auto;
+  padding: 20px 10px;
+}
+.services__wrapper__card {
+  max-width: 450px;
+  padding: 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.services__wrapper__card i {
+  font-size: 3rem;
+}
+.services__wrapper__card span {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.services__wrapper__card p {
+  color: #808080;
+  line-height: 25px;
+  font-size: 0.9rem;
+}
+@media only screen and (max-width: 720px) {
+  .services__wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
