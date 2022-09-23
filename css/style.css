@@ -124,7 +124,7 @@ header .nav__links__cta {
   justify-content: space-between;
 }
 .home__wrapper__content {
-  width: min(100%, 625px);
+  width: min(100%, 500px);
 }
 .home__wrapper__content h1 {
   font-size: 4rem;
@@ -153,7 +153,7 @@ header .nav__links__cta {
   color: #fff;
 }
 .home__wrapper__image {
-  width: min(100%, 500px);
+  width: min(100%, 525px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,10 +162,11 @@ header .nav__links__cta {
 .home__wrapper__image::before {
   content: "";
   position: absolute;
-  width: min(100%, 350px);
+  width: min(100%, 320px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #ff8667;
+  box-shadow: 0px 0px 0px 7px #FFF5EE, 0px 0px 0px 14px #ff8667;
+  background: #ff8667;
   transform: translate(-50%);
   left: 50%;
 }

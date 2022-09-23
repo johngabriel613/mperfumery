@@ -10,7 +10,7 @@
         justify-content: space-between;
 
         &__content{
-            width: min(100%, 625px);
+            width: min(100%, 500px);
 
             h1{
                 font-size: 4rem;
@@ -43,7 +43,7 @@
         }
 
         &__image{
-            width: min(100%, 500px);
+            width: min(100%, 525px);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -52,10 +52,11 @@
             &::before{
                 content: '';
                 position: absolute;
-                width: min(100%, 350px);
+                width: min(100%, 320px);
                 aspect-ratio: 1;
                 border-radius: 50%;
-                background-color: #ff8667;
+                box-shadow: 0px 0px 0px 7px #FFF5EE, 0px 0px 0px 14px #ff8667 ;
+                background:#ff8667 ;
                 transform: translate(-50%);
                 left: 50%;
             }
