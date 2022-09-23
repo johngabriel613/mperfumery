@@ -2,6 +2,7 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 999;
 
     &.sticky{
         background: #fff;
@@ -17,6 +18,7 @@ header{
         width: min(100%, 1200px);
         margin: auto;
         padding: 15px 10px;
+        
 
         &__menu, &__shop{
             display: none;
@@ -76,7 +78,7 @@ header{
                 padding:10px;
                 box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                 transition: .3s ease-in-out;
-                z-index: 999;
+              
                 
                 &__close{
                     display: block;

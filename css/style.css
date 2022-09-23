@@ -27,6 +27,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 header.sticky {
   background: #fff;
@@ -91,7 +92,6 @@ header .nav__links__cta {
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     transition: 0.3s ease-in-out;
-    z-index: 999;
   }
   header .nav__links__close {
     display: block;
@@ -152,15 +152,26 @@ header .nav__links__cta {
   color: #fff;
 }
 .home__wrapper__image {
-  width: min(100%, 700px);
+  width: min(100%, 500px);
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home__wrapper__image::before {
+  content: "";
+  position: absolute;
+  width: min(100%, 350px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #FF4747;
+  transform: translate(-50%);
+  left: 50%;
 }
 .home__wrapper__image img {
   width: 100%;
   max-width: 200px;
   position: relative;
-  z-index: -1;
 }
 .home__wrapper__image .one {
   left: 100%;
@@ -237,7 +248,7 @@ header .nav__links__cta {
 }
 .services__wrapper__card {
   max-width: 450px;
-  padding: 50px;
+  padding: 30px;
   background: #fff;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
