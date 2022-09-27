@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 100%;
-  background: #FFF5EE;
+  background: #fafafa;
 }
 
 a {
@@ -247,7 +251,7 @@ header .nav__links__cta {
   gap: 2rem;
   width: min(100%, 1100px);
   margin: auto;
-  padding: 20px 10px;
+  padding: 15px 10px 50px;
 }
 .services__wrapper__card {
   max-width: 500px;
@@ -256,17 +260,17 @@ header .nav__links__cta {
   gap: 0.5rem;
 }
 .services__wrapper__card i {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 0.925rem + 2.8vw, 2.5rem);
 }
 .services__wrapper__card span {
   font-family: "Poppins", serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
 }
 .services__wrapper__card p {
   color: #808080;
   line-height: 25px;
-  font-size: 0.9rem;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
 }
 @media only screen and (max-width: 720px) {
   .services__wrapper {
@@ -281,12 +285,20 @@ header .nav__links__cta {
   padding: 20px 10px;
 }
 .products__wrapper__title {
-  font-size: 2.5rem;
   margin: auto;
-  margin-bottom: 45px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.products__wrapper__title h2 {
+  font-size: 2.5rem;
+}
+.products__wrapper__title p {
+  text-align: center;
+  color: #808080;
+}
+.products__wrapper .swiper {
+  padding: 30px 0;
 }
 .products__wrapper .card {
   background: #fff;
@@ -321,4 +333,12 @@ header .nav__links__cta {
 .products__wrapper .card p {
   font-size: 0.9rem;
   color: #808080;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+}
+.products__wrapper .inspired img {
+  width: min(100%, 200px);
+}
+.products__wrapper .inspired p {
+  text-align: center;
+  margin-bottom: 25px;
 }/*# sourceMappingURL=style.css.map */

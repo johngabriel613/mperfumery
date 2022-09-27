@@ -49,3 +49,31 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+var swiper = new Swiper(".inspired", {
+    slidesPerView: 2,
+    loop: true,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        // when window width is >= 480px
+        375: {
+        slidesPerView: 3,
+        spaceBetween: 10
+        },
+        // when window width is >= 640px
+        630: {
+        slidesPerView: 4,
+        spaceBetween: 30
+        },
+        980: {
+            slidesPerView: 5,
+            spaceBetween: 40
+            },
+    }
+});
+
+

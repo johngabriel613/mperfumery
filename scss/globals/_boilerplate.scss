@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-size: 100%;
-    background: #FFF5EE;
+    background: #fafafa;
 }
 
 a{
