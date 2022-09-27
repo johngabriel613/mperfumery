@@ -25,3 +25,27 @@ function scrollNav(){
 }
 
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    freeMode: true,
+    breakpoints: {
+        // when window width is >= 320px
+        // when window width is >= 480px
+        375: {
+        slidesPerView: 3,
+        spaceBetween: 10
+        },
+        // when window width is >= 640px
+        630: {
+        slidesPerView: 4,
+        spaceBetween: 30
+        },
+        980: {
+            slidesPerView: 5,
+            spaceBetween: 40
+            },
+    }
+});
+
+

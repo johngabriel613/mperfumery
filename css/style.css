@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-p, a {
+p, a, span {
   font: 100% "Poppins", sans-serif;
   font-weight: normal;
 }
@@ -116,7 +116,7 @@ header .nav__links__cta {
 }
 
 .home__wrapper {
-  width: min(100%, 1200px);
+  width: min(100%, 1100px);
   padding: 75px 10px 20px;
   margin: auto;
   display: flex;
@@ -131,6 +131,7 @@ header .nav__links__cta {
   font-size: clamp(2.5rem, 0.625rem + 6vw, 4rem);
   margin-bottom: 1rem;
   line-height: 1;
+  font-weight: bold;
 }
 .home__wrapper__content h1 span {
   font-family: "Dancing script", cursive;
@@ -244,22 +245,18 @@ header .nav__links__cta {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  width: min(100%, 1200px);
+  width: min(100%, 1100px);
   margin: auto;
   padding: 20px 10px;
 }
 .services__wrapper__card {
-  max-width: 450px;
-  padding: 30px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 .services__wrapper__card i {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .services__wrapper__card span {
   font-family: "Poppins", serif;
@@ -276,4 +273,52 @@ header .nav__links__cta {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.products__wrapper {
+  width: min(100%, 1100px);
+  margin: auto;
+  padding: 20px 10px;
+}
+.products__wrapper__title {
+  font-size: 2.5rem;
+  margin: auto;
+  margin-bottom: 45px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.products__wrapper .card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.products__wrapper .card img {
+  width: min(100%, 60px);
+  display: block;
+  margin: auto;
+}
+@media screen and (max-width: 720px) {
+  .products__wrapper .card img {
+    width: min(100%, 40px);
+  }
+}
+.products__wrapper .card .image {
+  background: #f7f7f7;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.products__wrapper .card .product-name {
+  font-weight: 500;
+  color: #121212;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+}
+.products__wrapper .card p {
+  font-size: 0.9rem;
+  color: #808080;
 }/*# sourceMappingURL=style.css.map */
