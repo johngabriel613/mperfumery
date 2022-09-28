@@ -51,16 +51,15 @@
             .product-name{
                 font-weight: 500;
                 color: #121212;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
             }
             
             p{
                 font-size: .9rem;
                 color: #808080;
                 font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 

@@ -342,15 +342,14 @@ header .nav__links__cta {
 .products__wrapper .card .product-name {
   font-weight: 500;
   color: #121212;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
 }
 .products__wrapper .card p {
   font-size: 0.9rem;
   color: #808080;
   font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .products__wrapper .inspired img {
   width: min(100%, 200px);
