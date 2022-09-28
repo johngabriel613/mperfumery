@@ -6,10 +6,12 @@
         gap: 2rem;
         width: min(100%, 1100px);
         margin: auto;
-        padding: 15px 10px 50px;
+        padding: 25px 10px;
+
+        
 
         &__card{
-            max-width: 500px;
+            width: min(100%, 500px);
             display: flex;
             flex-direction: column;
             gap: .5rem;
@@ -29,7 +31,10 @@
                 line-height: 25px;
                 font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
             }
+
         }
+
+        
 
         @media only screen and (max-width:720px) {
             flex-direction: column;
