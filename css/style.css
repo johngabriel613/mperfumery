@@ -278,7 +278,7 @@ header .nav__links__cta {
   gap: 2rem;
   width: min(100%, 1100px);
   margin: auto;
-  padding: 25px 10px;
+  padding: 20px 10px;
 }
 .services__wrapper__card {
   width: min(100%, 500px);
@@ -373,7 +373,7 @@ header .nav__links__cta {
 .about__wrapper {
   width: min(100%, 1100px);
   margin: auto;
-  padding: 20px 10px 50px;
+  padding: 20px 10px;
 }
 .about__wrapper__title {
   margin: 0 auto 20px;
@@ -433,7 +433,7 @@ header .nav__links__cta {
 .contact__wrapper {
   width: min(100%, 1100px);
   margin: auto;
-  padding: 25px 10px;
+  padding: 20px 10px;
 }
 .contact__wrapper__title {
   margin: 0 auto 20px;
@@ -495,16 +495,25 @@ header .nav__links__cta {
 }
 @media only screen and (max-width: 720px) {
   .contact {
-    background: linear-gradient(180deg, #fafafa 63%, #ff8667 63%, #ff8667 100%);
+    background: none;
+  }
+  .contact__wrapper {
+    padding: 20px 0 0;
   }
   .contact__wrapper__info {
     flex-direction: column-reverse;
     gap: 1rem;
   }
+  .contact__wrapper__info__content {
+    background: #ff8667;
+    padding: 10px;
+    width: 100%;
+  }
   .contact__wrapper__info__form {
     background: none;
     padding: 0;
     box-shadow: none;
+    padding: 10px;
   }
 }
 

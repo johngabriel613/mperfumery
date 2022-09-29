@@ -4,7 +4,7 @@
     &__wrapper{
         width: min(100%, 1100px);
         margin: auto;
-        padding: 25px 10px;
+        padding: 20px 10px;
         
         
         &__title{
@@ -81,22 +81,26 @@
     }
 
     @media only screen and (max-width:720px) {
-        background: linear-gradient(180deg, #fafafa 63%, #ff8667 63%,#ff8667 100%);;
-
+        background: none;
+        
         &__wrapper{
+            padding: 20px 0 0;
 
             &__info{
                 flex-direction: column-reverse;
                 gap: 1rem;
 
                 &__content{
-                    
+                    background: #ff8667;
+                    padding: 10px;
+                    width: 100%;
                 }
 
                 &__form{
                     background: none;
                     padding: 0;
                     box-shadow: none;
+                    padding: 10px;
                 }
             }
 
