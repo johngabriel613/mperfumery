@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+input, textarea, button {
+  border: none;
+  outline: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font: 100% "Rufina", sans-serif;
   font-weight: normal;
@@ -26,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 p, a, span {
   font: 100% "Poppins", sans-serif;
   font-weight: normal;
+}
+
+input, textarea, button {
+  font: 100% "Poppins", sans-serif;
 }
 
 header {
@@ -415,6 +424,87 @@ header .nav__links__cta {
   }
   .about__wrapper__content__image {
     width: min(100%, 250px);
+  }
+}
+
+.contact {
+  background: linear-gradient(0deg, #fafafa 15%, #ff8667 15%, #ff8667 70%, #fafafa 15%);
+}
+.contact__wrapper {
+  width: min(100%, 1100px);
+  margin: auto;
+  padding: 25px 10px;
+}
+.contact__wrapper__title {
+  margin: 0 auto 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact__wrapper__title h2 {
+  font-size: 2.5rem;
+}
+.contact__wrapper__title p {
+  text-align: center;
+  color: #808080;
+}
+.contact__wrapper__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.contact__wrapper__info__content {
+  width: min(100%, 450px);
+  display: grid;
+  gap: 1rem;
+}
+.contact__wrapper__info__content span {
+  font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
+  font-weight: 600;
+}
+.contact__wrapper__info__content p {
+  font-size: clamp(0.8rem, 0.55rem + 0.8vw, 1rem);
+}
+.contact__wrapper__info__content__list {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.contact__wrapper__info__content__list p, .contact__wrapper__info__content__list svg {
+  font-size: clamp(0.8rem, 0.55rem + 0.8vw, 1rem);
+}
+.contact__wrapper__info__form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 50px 30px;
+  width: min(100%, 450px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact__wrapper__info__form__input input, .contact__wrapper__info__form__input textarea {
+  width: 100%;
+  padding: 10px;
+  background: #f2f3f4;
+}
+.contact__wrapper__info__form__input button {
+  background: #121212;
+  padding: 10px 15px;
+  color: #fff;
+}
+@media only screen and (max-width: 720px) {
+  .contact {
+    background: linear-gradient(180deg, #fafafa 63%, #ff8667 63%, #ff8667 100%);
+  }
+  .contact__wrapper__info {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .contact__wrapper__info__form {
+    background: none;
+    padding: 0;
+    box-shadow: none;
   }
 }
 
