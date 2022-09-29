@@ -122,7 +122,7 @@ header .nav__links__cta {
 
 .home__wrapper {
   width: min(100%, 1100px);
-  padding: 100px 10px 25px;
+  padding: 100px 10px 0;
   margin: auto;
   display: flex;
   align-items: center;
@@ -303,7 +303,7 @@ header .nav__links__cta {
   padding: 20px 10px;
 }
 .products__wrapper__title {
-  margin: auto;
+  margin: 0 auto 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -324,6 +324,7 @@ header .nav__links__cta {
   flex-direction: column;
   padding: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
 }
 .products__wrapper .card img {
   width: min(100%, 60px);
@@ -363,10 +364,10 @@ header .nav__links__cta {
 .about__wrapper {
   width: min(100%, 1100px);
   margin: auto;
-  padding: 20px 10px;
+  padding: 20px 10px 50px;
 }
 .about__wrapper__title {
-  margin: auto;
+  margin: 0 auto 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -401,7 +402,7 @@ header .nav__links__cta {
 }
 .about__wrapper__content__image {
   width: min(100%, 500px);
-  box-shadow: clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) 0 0 #e6e4e4;
+  box-shadow: clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) 0 0 #d3d3d3;
 }
 .about__wrapper__content__image img {
   width: 100%;
@@ -417,6 +418,47 @@ header .nav__links__cta {
   }
 }
 
-footer {
-  min-height: 100vh;
+.footer {
+  background: #121212;
+  color: #fff;
+}
+.footer__wrapper {
+  width: min(100%, 1100px);
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 40px 10px;
+}
+.footer__wrapper__logo span {
+  font-size: clamp(2rem, 1.375rem + 2vw, 2.5rem);
+  font-family: "Rufina";
+}
+.footer__wrapper__logo p {
+  font-size: clamp(0.85rem, 0.6625rem + 0.6vw, 1rem);
+}
+.footer__wrapper__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__wrapper__socials a {
+  color: #fff;
+}
+.footer__wrapper__socials a svg {
+  font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
+}
+.footer__wrapper__links ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+.footer__wrapper__links ul a {
+  font-size: clamp(0.85rem, 0.6625rem + 0.6vw, 1rem);
+  color: #fff;
+}
+.footer__wrapper__copyright {
+  font-size: clamp(0.85rem, 0.6625rem + 0.6vw, 1rem);
 }/*# sourceMappingURL=style.css.map */

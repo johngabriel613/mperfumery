@@ -7,7 +7,7 @@
         padding: 20px 10px;
 
         &__title{
-            margin: auto;
+            margin: 0 auto 20px;
             width: fit-content;
 
             h2{
@@ -31,6 +31,7 @@
             flex-direction: column;
             padding: 20px ;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
 
             img{
                 width: min(100%, 60px);

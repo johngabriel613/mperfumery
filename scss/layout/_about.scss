@@ -2,10 +2,10 @@
     &__wrapper{
         width: min(100%, 1100px);
         margin: auto;
-        padding: 20px 10px;
+        padding: 20px 10px 50px ;
 
         &__title{
-            margin: auto;
+            margin: 0 auto 20px;
             width: fit-content;
 
             h2{
@@ -43,7 +43,7 @@
 
             &__image{
                 width: min(100%, 500px);
-                box-shadow: clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) 0 0 #e6e4e4;
+                box-shadow: clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) clamp(0.625rem, -0.5469rem + 3.75vw, 1.5625rem) 0 0 #d3d3d3;
 
                 img{
                 width: 100%;
